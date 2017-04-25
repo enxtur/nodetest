@@ -12,7 +12,7 @@ const PORT = 8080;
 const app = express();
 var count = 0
 app.get('/', function (req, res) {
-  console.log('count:', count)
+  console.log(count, 'request received.')
   res.send('count: ' + count++);
 });
 
